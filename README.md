@@ -1,9 +1,9 @@
 # TKNets-official
-# Foresee What You Will Learn: Data Augmentation for Domain Generalization in Non-Stationary Environments
+# Generalizing across Temporal Domains with Koopman Operators
 
 [__[Paper]__](https://arxiv.org/abs/2402.07834) 
 &nbsp; 
-This is the authors' official PyTorch implementation for Temporal Koopman Networks (TKNets) method in the **AAAI 2023** paper [Foresee What You Will Learn: Data Augmentation for Domain Generalization in Non-Stationary Environments](https://arxiv.org/pdf/2301.07845.pdf).
+This is the authors' official PyTorch implementation for Temporal Koopman Networks (TKNets) method in the **AAAI 2024** paper [Generalizing across Temporal Domains with Koopman Operators](https://arxiv.org/abs/2402.07834.pdf).
 
 
 ## Prerequisites
@@ -14,7 +14,7 @@ This is the authors' official PyTorch implementation for Temporal Koopman Networ
 - pandas
 
 ## Dataset
-Rotated Gaussian and Rotated MNIST: [https://drive.google.com/file/d/1o80mLQcMHej9d-MznWjGp48QRBCyWTX9/view?usp=sharing](https://drive.google.com/file/d/1o80mLQcMHej9d-MznWjGp48QRBCyWTX9/view?usp=sharing)
+Dataset can be downloaded using "datasets.py"
 
 
 ## Training and test

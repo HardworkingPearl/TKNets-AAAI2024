@@ -61,7 +61,6 @@ DATASETS = [
     # TDG
     "TDGRPlate",
     "TDGEvolCircle",
-    "TDGEvolSine",
     "TDGRotatedMNIST",
     "TDGPortrait",
     "TDGForestCover",
@@ -454,17 +453,6 @@ class TDGEvolCircleDInfoProduct(SimpleSyntheticDataset):
             Path(data_dir) / 'toy-circle/data/half-circle.pkl', 
             test_envs, hparams, domain_info='product')
 
-class TDGEvolSine(SimpleSyntheticDataset):
-    def __init__(self, data_dir, test_envs, hparams):
-        super(TDGEvolSine, self).__init__(
-            Path(data_dir) / 'toy-sine/sine.pkl', 
-            test_envs, hparams)
-
-class TDGEvolSineDInfo(SimpleSyntheticDataset):
-    def __init__(self, data_dir, test_envs, hparams):
-        super(TDGEvolSineDInfo, self).__init__(
-            Path(data_dir) / 'toy-sine/sine.pkl', 
-            test_envs, hparams, domain_info='product')
 
 class TDGRotatedMNIST(RotatedMNIST):
     ''' Spawn envs based on env_distance, env_number, env_sample number.
@@ -1521,12 +1509,7 @@ if __name__ == "__main__":
     parser.add_argument('--data_dir', type=str, required=True)
     args = parser.parse_args()
 
+    # download or generate dataset
+    # gen_RPlate()
     # download_mnist(args.data_dir)
-    download_pacs(args.data_dir)
-    # download_office_home(args.data_dir)
-    # download_domain_net(args.data_dir)
-    # download_vlcs(args.data_dir)
-    # download_terra_incognita(args.data_dir)
-    # download_sviro(args.data_dir)
-    # Camelyon17Dataset(root_dir=args.data_dir, download=True)
     # FMoWDataset(root_dir=args.data_dir, download=True)
