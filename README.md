@@ -1,4 +1,3 @@
-# TKNets-official
 # Generalizing across Temporal Domains with Koopman Operators
 
 [__[Paper]__](https://arxiv.org/abs/2402.07834) 
